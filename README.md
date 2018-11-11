@@ -1,6 +1,6 @@
 # laravel ec sample
 
-## install
+## Install
 
 ```
 cd laradock-ec-sample
@@ -13,5 +13,55 @@ composer create-project --prefer-dist laravel/laravel ./
 ```
 
 ```
+cd ../
 sh .sh/setup.sh
+```
+
+## Test
+
+```
+cd src
+vendor/bin/phpunit
+```
+
+## Database
+
+```
+cd laradock-ec-sample
+docker-compose up -d nginx postgres redis workspace
+docker-compose exec workspace bash
+```
+
+```
+psql -d default -U default -h postgres
+```
+
+## Xdebug .vscode/launch.json Example
+
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Listen for XDebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9000,
+      "pathMappings": {
+        "/var/www":"${workspaceRoot}/src"
+       },
+      "ignore": [
+        "**/vendor/**/*.php"
+      ]
+    },
+    {
+      "name": "Launch currently open script",
+      "type": "php",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "port": 9000
+    }
+  ]
+}
 ```
