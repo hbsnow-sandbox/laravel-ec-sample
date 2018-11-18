@@ -1,3 +1,4 @@
 [submodule "laradock-ec-sample"]
 	path = laradock-ec-sample
 	url = https://github.com/Laradock/laradock.git
+	ignore = dirty
