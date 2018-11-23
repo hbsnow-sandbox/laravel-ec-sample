@@ -27,8 +27,6 @@ vendor/bin/phpunit
 ## Database
 
 ```
-cd laradock-ec-sample
-docker-compose up -d nginx postgres redis workspace
 docker-compose exec workspace bash
 ```
 
