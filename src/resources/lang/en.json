@@ -1,0 +1,12 @@
+{
+    "ログイン": "Login",
+    "ユーザ登録": "Register",
+    "ユーザ名": "Name",
+    "パスワード": "Password",
+    "パスワードの確認": "Confirm Password",
+    "ユーザ名とパスワードを記憶する": "Remember Me",
+    "パスワードを忘れた場合": "Forgot Your Password?",
+    "パスワードのリセット": "Reset Password",
+    "メールアドレス": "E-Mail",
+    "パスワードをリセットする": "Send Password Reset Link"
+}
