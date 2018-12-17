@@ -7,7 +7,9 @@ mix
 
 
 if (process.env.MIX_BROWSER_SYNC) {
-  mix.browserSync('localhost')
+  mix.browserSync({
+    proxy: 'nginx'
+  })
 }
 
 if (process.env.MIX_DISABLE_NOTIFICATIONS) {
