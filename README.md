@@ -16,18 +16,7 @@ composer create-project --prefer-dist laravel/laravel ./
 sh .sh/setup.sh
 ```
 
-## Test
-
-```
-cd src
-vendor/bin/phpunit
-```
-
 ## Database
-
-```
-docker-compose exec workspace bash
-```
 
 ```
 psql -d default -U default -h postgres
@@ -62,3 +51,7 @@ psql -d default -U default -h postgres
   ]
 }
 ```
+
+## See Also
+
+- [LaradockのworkspaceからbrowserSyncを動かす](https://qiita.com/hbsnow/items/c95e5a0671dabb7b6344)
