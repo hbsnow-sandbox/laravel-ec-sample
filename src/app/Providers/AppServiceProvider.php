@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Telescope\TelescopeServiceProvider;
 
@@ -17,6 +18,9 @@ class AppServiceProvider extends ServiceProvider
     {
         // bladeのdouble encodeを無効にする
         Blade::withoutDoubleEncoding();
+
+        // Redisのイベントを有効にする
+        Redis::enableEvents();
     }
 
     /**

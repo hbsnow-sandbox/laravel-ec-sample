@@ -5,7 +5,7 @@
 ```
 cd laradock-ec-sample
 docker-compose up --build -d nginx php-fpm postgres redis workspace
-docker-compose exec workspace bash
+docker-compose exec --user=laradock workspace bash
 ```
 
 ```
