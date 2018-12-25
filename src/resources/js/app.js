@@ -1,11 +1,15 @@
+import '@babel/polyfill'
+import Vue from 'vue'
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+const object1 = {
+  a: 1,
+  b: 2,
+  c: 3
+}
 
-window.Vue = require('vue');
+const object2 = Object.assign({c: 4, d: 5}, object1)
+
+console.log(object2)
 
 /**
  * The following block of code may be used to automatically register your
@@ -13,7 +17,7 @@ window.Vue = require('vue');
  * components and automatically register them with their "basename".
  *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
@@ -27,8 +31,10 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
- */
+
 
 const app = new Vue({
     el: '#app'
 });
+
+*/

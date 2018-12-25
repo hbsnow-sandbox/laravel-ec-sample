@@ -10,6 +10,8 @@
         "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
+        "@babel/polyfill": "^7.2.5",
+        "@babel/preset-env": "^7.2.3",
         "axios": "^0.18",
         "browser-sync": "^2.26.3",
         "browser-sync-webpack-plugin": "^2.2.2",
